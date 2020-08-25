@@ -1,0 +1,55 @@
+## Project Controle Ativos - C# .Net / MySql / Docker / Angular.
+
+## Commands
+
+- Controle-Ativos
+  - Api
+  - Data
+  - Web
+  
+
+```
+  (Bash - Dir)
+  > mkdir Controle-Ativos
+  > cd Controle-Ativos/
+  > mkdir Api
+  > mkdir Web
+  > cd Api
+  
+  (Bash - Api dotnet)
+  > dotnet new webapi --name Controle.Ativos.Api --output Controle.Ativos.Api
+  > dotnet new sln
+  > dotnet sln Api.sln add Controle.Ativos.Api/Controle.Ativos.Api.csproj
+  > dotnet restore
+  > dotnet build Api.sln
+  
+  > dotnet run --project Controle.Ativos.Api/Controle.Ativos.Api.csproj
+  
+  (Bash - Api dotnet - NuGet)
+  > Dapper
+  
+  > Swagger
+  
+  > dotnet add Controle.Ativos.Api.csproj package FluentAssertions -v 2.4.1
+  
+  > dotnet add Controle.Ativos.Api.csproj package Microsoft.NETCore.App -v 2.2.8
+  > dotnet add Controle.Ativos.Api.csproj package Microsoft.NET.Test.Sdk -v 16.6.1
+  
+  > dotnet add Controle.Ativos.Api.csproj package xunit -v 2.4.1
+  > dotnet add Controle.Ativos.Api.csproj package xunit.runner.visualstudio -v 2.4.2
+  > dotnet add Controle.Ativos.Api.csproj package xunit.runner.console -v 2.4.2
+  
+  
+  (Run DB - Docker)
+  > cd Data
+  
+  Fist run -- (For Build Images)
+  > sh Run_Build_Images.sh
+  
+  (Read Adminer - Web)
+  http://localhost:8080/?server=c-ativos-sql&username=root&db=c_ativos_db
+  
+  (Run Script Sql)
+  
+  
+```
